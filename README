@@ -1,0 +1,18 @@
+Mosh experiment setup
+
+Note: git clone must be run on ~
+
+1) update ~/.bashrc by adding this line to the bottom "cd ~/CS244-Mosh"
+2) Run cd ~
+3) Run git clone ..
+4) Run cd CS244-Mosh
+5) Run mosh-setup.sh which will install mosh
+6) Copy the private key used to access this amazon instance into stm-data and call it CS244EC2.pem
+7) Run python moshtest.py
+   A directory will be created that stores the plots. The format of the directory is "results-<timestamp>"
+   At the end of the script, the results directory will be displayed
+8) Run cd "results-<timestamp>"
+9) Run display combined-ssh.png 
+10) Run display combined-mosh.png 
+11) Run display combined-ssh-vpn.png 
+12) Run display combined-mosh-vpn.png 
