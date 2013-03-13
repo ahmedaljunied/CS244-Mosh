@@ -5,7 +5,7 @@ Note: git clone must be run on ~
 0) Use the CS244 mininet instance as a base
 1) update ~/.bashrc by adding this line to the bottom "cd ~/CS244-Mosh"
 2) Run cd ~
-3) Run git clone ..
+3) Run git clone https://github.com/ahmedaljunied/CS244-Mosh.git
 4) Run cd CS244-Mosh
 5) Run mosh-setup.sh which will install mosh
 6) Copy the private key used to access this amazon instance into stm-data and call it CS244EC2.pem
