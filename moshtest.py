@@ -315,7 +315,7 @@ def mosh_test():
                     sf = "%s.sorted" %rf
                     generate_plottable_result(rf, resultsDir, sf, sortedDir)
                     plot_results(sf, sortedDir)
-        if(len(popenDone) == len(popenResFiles):
+        if(len(popenDone) == len(popenResFiles)):
                break;
         print "-------------\n"                
         count += 1
