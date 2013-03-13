@@ -9,7 +9,7 @@ Note: git clone must be run on ~
 4) Run cd CS244-Mosh
 5) Run mosh-setup.sh which will install mosh and openvpn
 6) Copy the private key used to access this amazon instance into stm-data and call it CS244EC2.pem
-7) Run python moshtest.py
+7) Run run.sh
    A directory will be created that stores the plots. The format of the directory is "results-<timestamp>"
    At the end of the script, the results directory will be displayed
 8) Run cd "results-<timestamp>"
