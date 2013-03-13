@@ -1,0 +1,963 @@
+45750685 SIZE 156 42
+45901627 HOST 47
+bash: cd: stm-data: No such file or directory
+
+45915209 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+49083031 USER 3
+[A
+49083262 HOST 47
+scp ssh-delay.out aljunied@myth.stanford.edu:~/
+51361249 USER 3
+[B
+51361461 HOST 109
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+52721248 USER 1
+l
+52721423 HOST 1
+l
+52831594 USER 1
+s
+52831813 HOST 1
+s
+54152321 USER 1
+
+54152482 HOST 2
+
+
+54156882 HOST 300
+basic-session.out  [0m[01;32mh1.sh[0m     mosh-delay2.out  ssh-delay2.out  swrite.hpp        [01;32mterm-replay-cient-backup[0m  term-save.o
+delay1.out         [01;32mh1.sh~[0m    mosh-delay3.out  ssh-delay3.out  swrite.o          [01;32mterm-replay-client[0m        [01;32mterm-send[0m
+
+54156938 HOST 452
+delays.log         [01;32mh2.sh[0m     mosh-delay4.out  ssh-delay4.out  [01;32mterm-receive[0m      [01;32mterm-replay-server[0m        test-session-backup.out
+delays.log~        [01;32mh2.sh~[0m    mosh-delay.out   ssh-delay.out   term-receive.cpp  [01;32mterm-save[0m                 test-session.out
+depend             Makefile  [01;32msession-parse~[0m   swrite.cpp      term-receive.o    term-save.cpp             test-session.out~
+
+54157797 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+57668960 USER 1
+t
+57669148 HOST 1
+t
+57780764 USER 1
+e
+57780950 HOST 1
+e
+57892717 USER 1
+s
+57892933 HOST 1
+s
+58526178 USER 1
+t
+58526364 HOST 1
+t
+59595668 USER 1
+i
+59595853 HOST 1
+i
+59661061 USER 1
+n
+59661245 HOST 1
+n
+60213216 USER 1
+g
+60213441 HOST 1
+g
+61389204 USER 1
+ 
+61389394 HOST 1
+ 
+62636155 USER 1
+t
+62636345 HOST 1
+t
+62746065 USER 1
+e
+62746305 HOST 1
+e
+62882038 USER 1
+r
+62882214 HOST 1
+r
+63034616 USER 1
+m
+63034810 HOST 1
+m
+63292057 USER 1
+0
+63292265 HOST 1
+0
+64171155 USER 1
+
+64171335 HOST 4
+[K
+64411356 USER 1
+-
+64411612 HOST 1
+-
+64609562 USER 1
+s
+64609743 HOST 1
+s
+64777516 USER 1
+a
+64777694 HOST 1
+a
+64944859 USER 1
+v
+64945035 HOST 1
+v
+65009414 USER 1
+e
+65009696 HOST 1
+e
+65306624 USER 1
+
+65306778 HOST 2
+
+
+66047096 HOST 28
+testing: command not found
+
+66062337 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+69888666 USER 1
+c
+69888860 HOST 1
+c
+70086879 USER 1
+a
+70087069 HOST 1
+a
+70392410 USER 1
+t
+70392622 HOST 1
+t
+72023190 USER 1
+ 
+72023362 HOST 1
+ 
+72271349 USER 1
+t
+72271523 HOST 1
+t
+72445799 USER 1
+e
+72446010 HOST 1
+e
+72541554 USER 1
+r
+72541733 HOST 1
+r
+72782882 USER 1
+m
+72783067 HOST 1
+m
+73087242 USER 1
+-
+73087418 HOST 1
+-
+73237319 USER 1
+s
+73237528 HOST 1
+s
+73301092 USER 1
+e
+73301285 HOST 1
+e
+73500852 USER 1
+r
+73501034 HOST 1
+r
+73862196 USER 1
+
+73862389 HOST 4
+[K
+74014439 USER 1
+v
+74014595 HOST 1
+v
+74213018 USER 1
+
+74213318 HOST 4
+[K
+74518627 USER 1
+
+74518824 HOST 4
+[K
+74660656 USER 1
+v
+74660860 HOST 1
+v
+74724650 USER 1
+a
+74724857 HOST 1
+a
+74948548 USER 1
+e
+74948840 HOST 1
+e
+75596188 USER 1
+
+75596454 HOST 4
+[K
+75731490 USER 1
+
+75731695 HOST 4
+[K
+75884080 USER 1
+
+75884290 HOST 4
+[K
+75979560 USER 1
+a
+75979753 HOST 1
+a
+76059378 USER 1
+v
+76059571 HOST 1
+v
+76107385 USER 1
+e
+76107573 HOST 1
+e
+76939106 USER 1
+.
+76939297 HOST 1
+.
+77445301 USER 1
+c
+77445488 HOST 1
+c
+78107423 USER 1
+p
+78107615 HOST 1
+p
+78234961 USER 1
+p
+78235160 HOST 1
+p
+78410802 USER 1
+
+78410961 HOST 2
+
+
+78429786 HOST 99
+#include <pty.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+78429986 HOST 147
+
+#include <errno.h>
+#include <poll.h>
+#include <string.h>
+#include <locale.h>
+#include <langinfo.h>
+#include <wchar.h>
+#include <assert.h>
+
+78430081 HOST 63
+#include <wctype.h>
+#include <iostream>
+#include <typeinfo>
+
+78430117 HOST 90
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <sys/signalfd.h>
+#include <termios.h>
+78430217 HOST 198
+
+#include <sys/types.h>
+#include <pwd.h>
+#include <sys/time.h>
+
+#include "swrite.hpp"
+
+const size_t buf_size = 16384;
+
+const char HOST_STRING[] = "HOST";
+const char USER_STRING[] = "USER";
+78430302 HOST 259
+
+
+void save_session( int log_fd, int child_fd );
+
+uint64_t micro_timestamp( void )
+{
+  struct timespec tp;
+
+  assert( clock_gettime( CLOCK_MONOTONIC, &tp ) >= 0 );
+
+  uint64_t micros = tp.tv_nsec / 1000;
+  micros += uint64_t( tp.tv_sec ) * 1000000;
+78430407 HOST 374
+
+
+  return micros;
+}
+
+void record_string( int log_fd, char *buf, ssize_t num, const char *tag )
+{
+  char message[ 2048 ];
+  int len = snprintf( message, 2048, "%lld %s %ld\n", (long long)micro_timestamp(), tag, (long)num );
+  assert( len >= 0 );
+  assert( len < 2048 );
+
+  swrite( log_fd, message, len );
+  swrite( log_fd, buf, num );
+  swrite( log_fd, "\n" );
+78430493 HOST 279
+
+}
+
+void record_resize( int log_fd, int width, int height )
+{
+  char message[ 2048 ];
+  int len = snprintf( message, 2048, "%lld SIZE %d %d\n", (long long)micro_timestamp(), width, height );
+  assert( len >= 0 );
+  assert( len < 2048 );
+  swrite( log_fd, message, len );
+78430560 HOST 147
+
+}
+
+int main( int argc, char *argv[] )
+{
+  if ( argc != 2 ) {
+    fprintf( stderr, "USAGE: %s LOGFILE\n", argv[ 0 ] );
+    exit( 1 );
+  }
+
+78430634 HOST 283
+
+  int log_fd = open( argv[ 1 ], O_WRONLY | O_CREAT | O_TRUNC | O_NOCTTY, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH );
+  if ( log_fd < 0 ) {
+    perror( "creat" );
+    exit( 1 );
+  }
+
+  int master;
+  struct termios saved_termios, raw_termios, child_termios;
+
+78430712 HOST 236
+
+  if ( NULL == setlocale( LC_ALL, "" ) ) {
+    perror( "setlocale" );
+    exit( 1 );
+  }
+
+  if ( strcmp( nl_langinfo( CODESET ), "UTF-8" ) != 0 ) {
+    fprintf( stderr, "term-save requires a UTF-8 locale.\n" );
+    exit( 1 );
+
+78430786 HOST 197
+  }
+
+  if ( tcgetattr( STDIN_FILENO, &saved_termios ) < 0 ) {
+    perror( "tcgetattr" );
+    exit( 1 );
+  }
+
+  child_termios = saved_termios;
+
+  if ( !(child_termios.c_iflag & IUTF8) ) {
+
+78430849 HOST 281
+    fprintf( stderr, "Warning: Locale is UTF-8 but termios IUTF8 flag not set. Setting IUTF8 flag.\n" );
+    child_termios.c_iflag |= IUTF8;
+  }
+
+  pid_t child = forkpty( &master, NULL, &child_termios, NULL );
+
+  if ( child == -1 ) {
+    perror( "forkpty" );
+    exit( 1 );
+78430946 HOST 153
+
+  }
+
+  if ( child == 0 ) {
+    /* child */
+    if ( setenv( "TERM", "xterm", true ) < 0 ) {
+      perror( "setenv" );
+      exit( 1 );
+    }
+
+
+78431026 HOST 195
+    /* ask ncurses to send UTF-8 instead of ISO 2022 for line-drawing chars */
+    if ( setenv( "NCURSES_NO_UTF8_ACS", "1", true ) < 0 ) {
+      perror( "setenv" );
+      exit( 1 );
+    }
+
+
+78431114 HOST 224
+    /* get shell name */
+    struct passwd *pw = getpwuid( geteuid() );
+    if ( pw == NULL ) {
+      perror( "getpwuid" );
+      exit( 1 );
+    }
+
+    char *my_argv[ 2 ];
+    my_argv[ 0 ] = strdup( pw->pw_shell );
+
+78431187 HOST 194
+    assert( my_argv[ 0 ] );
+    my_argv[ 1 ] = NULL;
+
+    if ( execve( pw->pw_shell, my_argv, environ ) < 0 ) {
+      perror( "execve" );
+      exit( 1 );
+    }
+    exit( 0 );
+  } else {
+78431273 HOST 212
+
+    /* parent */
+    raw_termios = saved_termios;
+
+    cfmakeraw( &raw_termios );
+
+    if ( tcsetattr( STDIN_FILENO, TCSANOW, &raw_termios ) < 0 ) {
+      perror( "tcsetattr" );
+      exit( 1 );
+    }
+
+78431346 HOST 272
+
+    char open[] = "\033c";
+    char close[] = "\033[!p";
+
+    swrite( STDOUT_FILENO, open );
+    save_session( log_fd, master );
+    swrite( STDOUT_FILENO, close );
+
+    if ( tcsetattr( STDIN_FILENO, TCSANOW, &saved_termios ) < 0 ) {
+      perror( "tcsetattr" );
+78431419 HOST 111
+
+      exit( 1 );
+    }
+  }
+
+  if ( close( log_fd ) < 0 ) {
+    perror( "close" );
+    exit( 1 );
+  }
+
+78431487 HOST 143
+
+  printf( "[term-save is exiting.]\n" );
+
+  return 0;
+}
+
+/* This is the main loop. */
+
+void save_session( int log_fd, int child_fd )
+
+78431572 HOST 293
+{
+  /* establish WINCH fd and start listening for signal */
+  sigset_t signal_mask;
+  assert( sigemptyset( &signal_mask ) == 0 );
+  assert( sigaddset( &signal_mask, SIGWINCH ) == 0 );
+
+  /* stop "ignoring" WINCH signal */
+  assert( sigprocmask( SIG_BLOCK, &signal_mask, NULL ) == 0 );
+
+78431695 HOST 394
+
+  int winch_fd = signalfd( -1, &signal_mask, 0 );
+  if ( winch_fd < 0 ) {
+    perror( "signalfd" );
+    return;
+  }
+
+  /* get current window size */
+  struct winsize window_size;
+  if ( ioctl( STDIN_FILENO, TIOCGWINSZ, &window_size ) < 0 ) {
+    perror( "ioctl TIOCGWINSZ" );
+    return;
+  }
+
+  /* tell child process */
+  if ( ioctl( child_fd, TIOCSWINSZ, &window_size ) < 0 ) {
+78431780 HOST 230
+
+    perror( "ioctl TIOCSWINSZ" );
+    return;
+  }
+
+  record_resize( log_fd, window_size.ws_col, window_size.ws_row );
+
+  struct pollfd pollfds[ 3 ];
+
+  pollfds[ 0 ].fd = STDIN_FILENO;
+  pollfds[ 0 ].events = POLLIN;
+
+
+78431851 HOST 224
+  pollfds[ 1 ].fd = child_fd;
+  pollfds[ 1 ].events = POLLIN;
+
+  pollfds[ 2 ].fd = winch_fd;
+  pollfds[ 2 ].events = POLLIN;
+
+  while ( 1 ) {
+    int active_fds = poll( pollfds, 3, -1 );
+    if ( active_fds < 0 ) {
+
+78431938 HOST 255
+      perror( "poll" );
+      break;
+    }
+
+    if ( pollfds[ 0 ].revents & POLLIN ) {
+      /* input from user */
+      char buf[ buf_size ];
+
+      /* fill buffer if possible */
+      ssize_t bytes_read = read( pollfds[ 0 ].fd, buf, buf_size );
+78432011 HOST 122
+
+      if ( bytes_read == 0 ) { /* EOF */
+	return;
+      } else if ( bytes_read < 0 ) {
+	perror( "read" );
+	return;
+
+78432115 HOST 245
+      }
+
+      record_string( log_fd, buf, bytes_read, USER_STRING );
+      
+      /* send along to host */
+      if ( swrite( pollfds[ 1 ].fd, buf, bytes_read ) < 0 ) {
+	break;
+      }
+    } else if ( pollfds[ 1 ].revents & POLLIN ) {
+
+78432188 HOST 255
+      /* input from host */
+      char buf[ buf_size ];
+
+      /* fill buffer if possible */
+      ssize_t bytes_read = read( pollfds[ 1 ].fd, buf, buf_size );
+      if ( bytes_read == 0 ) { /* EOF */
+	return;
+      } else if ( bytes_read < 0 ) {
+
+78432274 HOST 201
+	perror( "read" );
+	return;
+      }
+
+      record_string( log_fd, buf, bytes_read, HOST_STRING );
+
+      /* send along to user */
+      if ( swrite( pollfds[ 0 ].fd, buf, bytes_read ) < 0 ) {
+	
+78432356 HOST 272
+break;
+      }
+    } else if ( pollfds[ 2 ].revents & POLLIN ) {
+      /* resize */
+      struct signalfd_siginfo info;
+      assert( read( winch_fd, &info, sizeof( info ) ) == sizeof( info ) );
+      assert( info.ssi_signo == SIGWINCH );
+
+      /* get new size */
+78432429 HOST 227
+
+      if ( ioctl( STDIN_FILENO, TIOCGWINSZ, &window_size ) < 0 ) {
+	perror( "ioctl TIOCGWINSZ" );
+	return;
+      }
+
+      record_resize( log_fd, window_size.ws_col, window_size.ws_row );
+
+      /* tell child process */
+78432514 HOST 220
+
+      if ( ioctl( child_fd, TIOCSWINSZ, &window_size ) < 0 ) {
+	perror( "ioctl TIOCSWINSZ" );
+	return;
+      }
+    } else if ( (pollfds[ 0 ].revents | pollfds[ 1 ].revents)
+		& (POLLERR | POLLHUP | POLLNVAL) ) {
+
+78432584 HOST 29
+      break;
+    }
+  }
+}
+
+78433392 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+80619389 USER 1
+l
+80622368 HOST 1
+l
+81004693 USER 2
+s 
+81004893 HOST 1
+s
+81004929 HOST 1
+ 
+81105022 USER 1
+-
+81105213 HOST 1
+-
+81289195 USER 1
+l
+81289390 HOST 1
+l
+81449492 USER 1
+a
+81449757 HOST 1
+a
+81906330 USER 1
+
+81906478 HOST 2
+
+
+81912428 HOST 12
+total 1540
+
+81912755 HOST 67
+drwxr-xr-x  3 ubuntu ubuntu   4096 Feb 27 18:25 [0m[01;34m.[0m
+
+81912786 HOST 64
+drwxr-xr-x 21 ubuntu ubuntu   4096 Feb 27 18:24 [01;34m..[0m
+
+81912809 HOST 67
+-rw-r--r--  1 ubuntu ubuntu  11409 Feb 27 18:25 basic-session.out
+
+81912833 HOST 60
+-rw-r--r--  1 ubuntu ubuntu      0 Feb 24 22:10 delay1.out
+
+81912856 HOST 60
+-rw-r--r--  1 ubuntu ubuntu  36800 Feb 24 20:55 delays.log
+
+81912879 HOST 61
+-rw-r--r--  1 ubuntu ubuntu    325 Feb 24 19:40 delays.log~
+
+81912902 HOST 56
+-rw-r--r--  1 ubuntu ubuntu     76 Feb 22 05:54 depend
+
+81912925 HOST 66
+drwxr-xr-x  8 ubuntu ubuntu   4096 Feb 25 00:29 [01;34m.git[0m
+
+81912949 HOST 67
+-rwxr-xr-x  1 ubuntu ubuntu     91 Feb 25 00:46 [01;32mh1.sh[0m
+
+81912971 HOST 68
+-rwxr-xr-x  1 ubuntu ubuntu     92 Feb 25 00:44 [01;32mh1.sh~[0m
+
+81912995 HOST 67
+-rwxr-xr-x  1 ubuntu ubuntu    106 Feb 25 00:46 [01;32mh2.sh[0m
+
+81913051 HOST 124
+-rwxr-xr-x  1 ubuntu ubuntu    107 Feb 25 00:45 [01;32mh2.sh~[0m
+-rw-r--r--  1 ubuntu ubuntu    641 Feb 22 05:54 Makefile
+81913198 HOST 2
+
+
+81913279 HOST 65
+-rw-r--r--  1 root   root    16080 Feb 24 23:35 mosh-delay2.out
+
+81913524 HOST 65
+-rw-r--r--  1 root   root    12467 Feb 24 23:52 mosh-delay3.out
+
+81913582 HOST 63
+-rw-r--r--  1 root   root     7749 Feb 25 00:48 mosh-delay4.out
+81913710 HOST 2
+
+
+81913753 HOST 64
+-rw-r--r--  1 root   root     5733 Feb 25 01:27 mosh-delay.out
+
+81913873 HOST 76
+-rwxr-xr-x  1 ubuntu ubuntu   1462 Feb 24 18:48 [01;32msession-parse~[0m
+
+81913901 HOST 64
+-rw-r--r--  1 root   root    23700 Feb 24 23:25 ssh-delay2.out
+
+81913924 HOST 64
+-rw-r--r--  1 root   root    14586 Feb 24 23:43 ssh-delay3.out
+
+81913946 HOST 64
+-rw-r--r--  1 root   root    10278 Feb 25 00:45 ssh-delay4.out
+
+81913967 HOST 63
+-rw-r--r--  1 root   root    10737 Feb 25 01:27 ssh-delay.out
+
+81913989 HOST 60
+-rw-r--r--  1 ubuntu ubuntu    554 Feb 22 05:54 swrite.cpp
+
+81914010 HOST 60
+-rw-r--r--  1 ubuntu ubuntu    104 Feb 22 05:54 swrite.hpp
+
+81914032 HOST 58
+-rw-r--r--  1 ubuntu ubuntu   8280 Feb 22 05:54 swrite.o
+
+81914053 HOST 74
+-rwxr-xr-x  1 ubuntu ubuntu  58922 Feb 22 05:54 [01;32mterm-receive[0m
+
+81914091 HOST 66
+-rw-r--r--  1 ubuntu ubuntu   6693 Feb 22 05:54 term-receive.cpp
+
+81914195 HOST 64
+-rw-r--r--  1 ubuntu ubuntu  82624 Feb 22 05:54 term-receive.o
+
+81914223 HOST 86
+-rwxr-xr-x  1 ubuntu ubuntu   1721 Feb 24 23:15 [01;32mterm-replay-cient-backup[0m
+
+81914245 HOST 80
+-rwxr-xr-x  1 ubuntu ubuntu   1729 Feb 25 00:29 [01;32mterm-replay-client[0m
+
+81914267 HOST 80
+-rwxr-xr-x  1 ubuntu ubuntu   1667 Feb 24 19:00 [01;32mterm-replay-server[0m
+
+81914288 HOST 71
+-rwxr-xr-x  1 ubuntu ubuntu  61444 Feb 22 05:54 [01;32mterm-save[0m
+
+81914309 HOST 63
+-rw-r--r--  1 ubuntu ubuntu   6836 Feb 22 05:54 term-save.cpp
+
+81914331 HOST 61
+-rw-r--r--  1 ubuntu ubuntu  89808 Feb 22 05:54 term-save.o
+
+81914370 HOST 71
+-rwxr-xr-x  1 ubuntu ubuntu    464 Feb 22 05:54 [01;32mterm-send[0m
+
+81914494 HOST 73
+-rw-r--r--  1 ubuntu ubuntu 334523 Feb 24 19:54 test-session-backup.out
+
+81914538 HOST 131
+-rw-r--r--  1 ubuntu ubuntu 333950 Feb 24 20:44 test-session.out
+-rw-r--r--  1 ubuntu ubuntu 333798 Feb 24 20:42 test-session.out~
+81914586 HOST 2
+
+
+81915568 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+84105501 USER 1
+l
+84105690 HOST 1
+l
+84279801 USER 1
+s
+84279972 HOST 1
+s
+84737555 USER 1
+
+84737710 HOST 2
+
+
+84742272 HOST 467
+basic-session.out  [0m[01;32mh1.sh[0m     mosh-delay2.out  ssh-delay2.out  swrite.hpp        [01;32mterm-replay-cient-backup[0m  term-save.o
+delay1.out         [01;32mh1.sh~[0m    mosh-delay3.out  ssh-delay3.out  swrite.o          [01;32mterm-replay-client[0m        [01;32mterm-send[0m
+delays.log         [01;32mh2.sh[0m     mosh-delay4.out  ssh-delay4.out  [01;32mterm-receive[0m      [01;32mterm-replay-server[0m        test-session-backup.out
+
+84742340 HOST 285
+delays.log~        [01;32mh2.sh~[0m    mosh-delay.out   ssh-delay.out   term-receive.cpp  [01;32mterm-save[0m                 test-session.out
+depend             Makefile  [01;32msession-parse~[0m   swrite.cpp      term-receive.o    term-save.cpp             test-session.out~
+
+84743419 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+87360110 USER 1
+c
+87360298 HOST 1
+c
+87573880 USER 1
+a
+87574034 HOST 1
+a
+87863415 USER 1
+t
+87863600 HOST 1
+t
+88311251 USER 1
+ 
+88311442 HOST 1
+ 
+88703167 USER 1
+d
+88703362 HOST 1
+d
+88821931 USER 1
+e
+88822109 HOST 1
+e
+88949505 USER 1
+p
+88949687 HOST 1
+p
+89037352 USER 1
+e
+89037540 HOST 1
+e
+89253135 USER 1
+n
+89253328 HOST 1
+n
+89437709 USER 1
+d
+89437897 HOST 1
+d
+89613236 USER 1
+
+89613424 HOST 2
+
+
+89628460 HOST 78
+swrite.o: swrite.cpp swrite.hpp
+term-receive.o: term-receive.cpp swrite.hpp
+
+89629148 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+91534265 USER 1
+c
+91534453 HOST 1
+c
+91676817 USER 1
+d
+91676994 HOST 1
+d
+92028022 USER 1
+ 
+92028252 HOST 1
+ 
+92853163 USER 1
+
+92853392 HOST 4
+[K
+93027782 USER 1
+
+93027965 HOST 4
+[K
+93203276 USER 1
+
+93203468 HOST 4
+[K
+94884229 USER 1
+t
+94884414 HOST 1
+t
+95002839 USER 1
+h
+95003011 HOST 1
+h
+95090698 USER 1
+e
+95090870 HOST 1
+e
+95194675 USER 1
+ 
+95194870 HOST 1
+ 
+95290736 USER 1
+e
+95290912 HOST 1
+e
+95402287 USER 1
+n
+95402497 HOST 1
+n
+95521686 USER 1
+e
+95521925 HOST 1
+e
+95658137 USER 1
+d
+95658487 HOST 1
+d
+96203876 USER 1
+
+96204060 HOST 4
+[K
+96337489 USER 1
+
+96337690 HOST 4
+[K
+96442092 USER 1
+d
+96442284 HOST 1
+d
+96771246 USER 1
+
+96771368 HOST 2
+
+
+97024208 HOST 103
+The program 'the' is currently not installed. You can install it by typing:
+sudo apt-get install the
+
+97037464 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+101744928 USER 1
+l
+101745114 HOST 1
+l
+102136559 USER 1
+o
+102136743 HOST 1
+o
+102648429 USER 1
+g
+102648609 HOST 1
+g
+102896751 USER 1
+o
+102896939 HOST 1
+o
+103014790 USER 1
+u
+103014984 HOST 1
+u
+103360172 USER 1
+t
+103360360 HOST 1
+t
+108207064 USER 1
+
+108207247 HOST 2
+
+
+108207595 HOST 43
+bash: logout: not login shell: use `exit'
+
+108208002 HOST 62
+[0;33mcs244-[0;36mip-10-252-82-207:[0;35m~/stm-data⚡[0m 
+109908723 USER 1
+e
+109908874 HOST 1
+e
+110106961 USER 1
+x
+110107157 HOST 1
+x
+110234750 USER 1
+i
+110234903 HOST 1
+i
+110459079 USER 1
+t
+110459267 HOST 1
+t
+110650794 USER 1
+
+110650950 HOST 2
+
+
+110651147 HOST 6
+exit
+
